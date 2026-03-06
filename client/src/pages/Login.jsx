@@ -87,14 +87,6 @@ const Login = () => {
             Register here
           </Link>
         </p>
-
-        <div className="mt-8 p-4 bg-yellow-50 rounded-lg">
-          <p className="text-sm text-gray-600">
-            <strong>Demo Admin Credentials:</strong><br />
-            Email: admin@dpstudio.com<br />
-            Password: admin123
-          </p>
-        </div>
       </div>
     </div>
   );
