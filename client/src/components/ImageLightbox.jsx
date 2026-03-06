@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { getAssetUrl } from '../services/api';
 
 const ImageLightbox = ({ image, onClose }) => {
   if (!image) return null;
@@ -13,7 +14,7 @@ const ImageLightbox = ({ image, onClose }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <img 
-          src={image.imageUrl} 
+          src={getAssetUrl(image.imageUrl)} 
           alt={image.title}
           className="w-full h-full object-contain"
         />

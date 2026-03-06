@@ -1,4 +1,6 @@
 
+import { getAssetUrl } from '../services/api';
+
 
 const About = () => {
   return (
@@ -30,7 +32,7 @@ const About = () => {
           </div>
           <div className="bg-gray-300 rounded-lg overflow-hidden h-96">
             <img 
-              src="/uploads/780252.jpg" 
+              src={getAssetUrl('/uploads/780252.jpg')} 
               alt="Studio"
               className="w-full h-full object-cover"
             />

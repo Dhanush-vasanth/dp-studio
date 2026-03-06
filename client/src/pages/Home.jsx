@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../components/ServiceCard';
-import { serviceService, portfolioService } from '../services/api';
+import { serviceService, portfolioService, getAssetUrl } from '../services/api';
 
 const Home = () => {
   const [services, setServices] = useState([]);
@@ -103,7 +103,7 @@ const Home = () => {
               {portfolioImages.map((image) => (
                 <div key={image._id} className="bg-gray-200 rounded overflow-hidden">
                   <img 
-                    src={image.imageUrl} 
+                    src={getAssetUrl(image.imageUrl)} 
                     alt={image.title}
                     className="w-full h-64 object-cover hover:scale-110 transition-transform cursor-pointer"
                   />

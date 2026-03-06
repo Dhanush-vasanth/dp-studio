@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import ImageLightbox from '../components/ImageLightbox';
-import { portfolioService } from '../services/api';
+import { portfolioService, getAssetUrl } from '../services/api';
 
 const Portfolio = () => {
   const [images, setImages] = useState([]);
@@ -116,7 +116,7 @@ const Portfolio = () => {
                   onClick={() => setSelectedImage(image)}
                 >
                   <img
-                    src={image.imageUrl}
+                    src={getAssetUrl(image.imageUrl)}
                     alt={image.title}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                   />

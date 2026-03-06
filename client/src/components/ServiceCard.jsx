@@ -1,8 +1,10 @@
+import { getAssetUrl } from '../services/api';
+
 const ServiceCard = ({ service }) => {
   return (
     <div className="service-card overflow-hidden">
       <img 
-        src={service.image} 
+        src={getAssetUrl(service.image)} 
         alt={service.title}
         className="w-full h-48 object-cover"
       />

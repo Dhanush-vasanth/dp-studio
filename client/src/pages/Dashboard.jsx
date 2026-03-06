@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { portfolioService, contactService, serviceService } from '../services/api';
+import { portfolioService, contactService, serviceService, getAssetUrl } from '../services/api';
 
 const Dashboard = () => {
   const { user } = useAuth();
@@ -333,7 +333,7 @@ const Dashboard = () => {
                   <div key={image._id} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
                     <div className="relative">
                       <img
-                        src={image.imageUrl}
+                        src={getAssetUrl(image.imageUrl)}
                         alt={image.title}
                         className="w-full h-48 object-cover"
                       />
