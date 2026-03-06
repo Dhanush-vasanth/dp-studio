@@ -32,7 +32,7 @@ const About = () => {
           </div>
           <div className="bg-gray-300 rounded-lg overflow-hidden h-96">
             <img 
-              src={getAssetUrl('/uploads/780252.jpg')} 
+              src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&h=600&fit=crop" 
               alt="Studio"
               className="w-full h-full object-cover"
             />
