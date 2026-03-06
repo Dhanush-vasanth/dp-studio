@@ -75,96 +75,95 @@ const seedDatabase = async () => {
       // Wedding
       {
         title: 'Bride & Groom First Kiss',
-        imageUrl: '/uploads/wp1.jpg',
+        imageUrl: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop',
         category: 'Wedding',
         uploadedBy: adminUser._id
       },
       {
         title: 'Bride and Groom First Dance',
-        imageUrl: '/uploads/wp2.jpg',
+        imageUrl: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&h=600&fit=crop',
         category: 'Wedding',
         uploadedBy: adminUser._id
       },
       {
-        title: 'wedding ceremony',
-        imageUrl: '/uploads/wp3.jpg',
+        title: 'Wedding Ceremony',
+        imageUrl: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&h=600&fit=crop',
         category: 'Wedding',
         uploadedBy: adminUser._id
       },
       // Pre-Wedding
       {
         title: 'Couple at Sunset',
-        imageUrl: '/uploads/pwp1.jpg',
+        imageUrl: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&h=600&fit=crop',
         category: 'PreWedding',
         uploadedBy: adminUser._id
       },
       {
         title: 'Romantic Beach Portrait',
-        imageUrl: '/uploads/pwp2.jpg',
+        imageUrl: 'https://images.unsplash.com/photo-1606995613802-c8003a4f9e39?w=800&h=600&fit=crop',
         category: 'PreWedding',
         uploadedBy: adminUser._id
       },
       {
         title: 'Couple Adventure',
-        imageUrl: '/uploads/pwp3.jpg',
+        imageUrl: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop',
         category: 'PreWedding',
         uploadedBy: adminUser._id
       },
-
       // Baby
       {
         title: 'Newborn Portrait',
-        imageUrl: '/uploads/bb3.jpg',
+        imageUrl: 'https://images.unsplash.com/photo-1493657671411-b21b27c24c74?w=800&h=600&fit=crop',
         category: 'Baby',
         uploadedBy: adminUser._id
       },
       {
         title: 'Baby Milestone',
-        imageUrl: '/uploads/bb1.jpg',
+        imageUrl: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=800&h=600&fit=crop',
         category: 'Baby',
         uploadedBy: adminUser._id
       },
       {
-        title: 'Newborn',
-        imageUrl: '/uploads/bb2.jpg',
+        title: 'Newborn Sleep',
+        imageUrl: 'https://images.unsplash.com/photo-1467571534411-620b28c4e6da?w=800&h=600&fit=crop',
         category: 'Baby',
         uploadedBy: adminUser._id
       },
       // Outdoor
       {
-        title: 'norway photoshoot',
-        imageUrl: '/uploads/od1.jpg',
+        title: 'Mountain Photoshoot',
+        imageUrl: 'https://images.unsplash.com/photo-1516035069371-29c4764c5ce0?w=800&h=600&fit=crop',
         category: 'Outdoor',
         uploadedBy: adminUser._id
       },
       {
-        title: 'greenland photoshoot',
-        imageUrl: '/uploads/od2.jpg',
+        title: 'Forest Photoshoot',
+        imageUrl: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop',
         category: 'Outdoor',
         uploadedBy: adminUser._id
       },
       {
-        title: 'forest photoshoot',
-        imageUrl: '/uploads/od3.jpg',
+        title: 'Nature Portrait',
+        imageUrl: 'https://images.unsplash.com/photo-1552881388-8efb79a3e49c?w=800&h=600&fit=crop',
         category: 'Outdoor',
         uploadedBy: adminUser._id
       },
       // Events
       {
-        title: 'Event Crowd',
-        imageUrl: '/uploads/event1.jpg',
+        title: 'Event Celebration',
+        imageUrl: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop',
         category: 'Events',
         uploadedBy: adminUser._id
       },
       {
-        title: 'music concert',
-        imageUrl: '/uploads/event2.jpg',
+        title: 'Concert Photography',
+        imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=600&fit=crop',
         category: 'Events',
         uploadedBy: adminUser._id
       },
       {
-        title: 'wedding reception',
-        imageUrl: '/uploads/event3.jpg',
+        title: 'Party Moments',
+        imageUrl: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&h=600&fit=crop',
         category: 'Events',
         uploadedBy: adminUser._id
       }
