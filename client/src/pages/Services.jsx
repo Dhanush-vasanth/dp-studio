@@ -26,31 +26,31 @@ const Services = () => {
       _id: '1',
       title: 'Wedding Photography',
       description: 'Complete wedding coverage from pre-wedding shoots to reception. Capture every beautiful moment of your special day.',
-      image: '/uploads/wp1.jpg'
+      image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop'
     },
     {
       _id: '2',
       title: 'Pre-Wedding Shoot',
       description: 'Romantic pre-wedding sessions at scenic locations. Create timeless memories before your big day.',
-      image: '/uploads/pwp3.jpg'
+      image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&h=600&fit=crop'
     },
     {
       _id: '3',
       title: 'Outdoor Photography',
       description: 'Beautiful outdoor photography sessions at scenic locations. Perfect for couples and family portraits.',
-      image: '/uploads/od1.jpg'
+      image: 'https://images.unsplash.com/photo-1516035069371-29c4764c5ce0?w=800&h=600&fit=crop'
     },
     {
       _id: '4',
       title: 'Baby Shoot',
       description: 'Capture your newborn and baby milestones. Beautiful, safe, and professional photography for your precious moments.',
-      image: '/uploads/bb1.jpg'
+      image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=800&h=600&fit=crop'
     },
     {
       _id: '5',
       title: 'Event Photography',
       description: 'Professional coverage for corporate events, parties, and celebrations. Document every important moment.',
-      image: '/uploads/event2.jpg'
+      image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop'
     }
   ];
 
