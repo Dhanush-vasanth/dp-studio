@@ -31,7 +31,7 @@ export const uploadPortfolioImage = async (req, res) => {
     const portfolioImage = new PortfolioImage({
       title,
       category,
-      imageUrl: `/uploads/${req.file.filename}`,
+      imageUrl: req.file.path, // Cloudinary returns full URL in path property
       uploadedBy: req.userId
     });
 
