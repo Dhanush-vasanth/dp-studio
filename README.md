@@ -111,7 +111,27 @@ cd ../client
 npm install
 ```
 
-#### 5. Create Initial Admin User (Optional)
+#### 5. Configure Client Environment
+
+Create a `.env` file in the client directory:
+
+```bash
+# For local development
+VITE_API_URL=http://localhost:5000
+```
+
+**For production (Render, Vercel, etc.):**
+```env
+VITE_API_URL=https://your-api-url.onrender.com
+```
+
+**Note:** You can also copy from `.env.example`:
+```bash
+cp .env.example .env
+# Then edit .env with your local API URL
+```
+
+#### 6. Create Initial Admin User (Seed Database)
 
 To seed the database with an admin user and sample services, run:
 
