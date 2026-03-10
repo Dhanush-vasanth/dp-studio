@@ -11,6 +11,12 @@ DP Studio is a professional photography portfolio website that allows users to:
 - Register and login to their accounts
 - Admin dashboard for managing portfolio, services, and messages
 
+## 🚀 Quick Links
+
+- [Installation & Setup](#-getting-started)
+- [Deployment Guide](./DEPLOYMENT.md) - Deploy to Render, Vercel, or Netlify
+- [API Documentation](#-api-endpoints)
+
 ## 📋 Tech Stack
 
 **Frontend (Client):**
