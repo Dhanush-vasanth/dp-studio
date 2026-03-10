@@ -54,7 +54,7 @@ const Portfolio = () => {
         _id: '4',
         title: 'Baby Portrait',
         category: 'Baby',
-        imageUrl: 'https://images.unsplash.com/photo-1493517792181-cc1b2b5e9f14?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1493657671411-b21b27c24c74?w=500&h=400&fit=crop'
       },
       {
         _id: '5',
