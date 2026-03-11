@@ -32,12 +32,20 @@ const Navbar = () => {
               <div className="flex items-center space-x-4">
                 <span className="text-sm">Welcome, {user?.name}</span>
                 {user?.role === 'admin' && (
-                  <Link 
-                    to="/dashboard" 
-                    className="bg-yellow-600 hover:bg-yellow-700 px-4 py-2 rounded transition"
-                  >
-                    Dashboard
-                  </Link>
+                  <>
+                    <Link 
+                      to="/dashboard" 
+                      className="bg-yellow-600 hover:bg-yellow-700 px-4 py-2 rounded transition"
+                    >
+                      Dashboard
+                    </Link>
+                    <Link 
+                      to="/admin" 
+                      className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition"
+                    >
+                      Admin Panel
+                    </Link>
+                  </>
                 )}
                 <button 
                   onClick={handleLogout}
@@ -87,12 +95,20 @@ const Navbar = () => {
             {isAuthenticated ? (
               <>
                 {user?.role === 'admin' && (
-                  <Link 
-                    to="/dashboard" 
-                    className="block bg-yellow-600 px-4 py-2 rounded"
-                  >
-                    Dashboard
-                  </Link>
+                  <>
+                    <Link 
+                      to="/dashboard" 
+                      className="block bg-yellow-600 px-4 py-2 rounded"
+                    >
+                      Dashboard
+                    </Link>
+                    <Link 
+                      to="/admin" 
+                      className="block bg-blue-600 px-4 py-2 rounded"
+                    >
+                      Admin Panel
+                    </Link>
+                  </>
                 )}
                 <button 
                   onClick={handleLogout}

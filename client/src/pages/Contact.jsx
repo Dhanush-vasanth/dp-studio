@@ -25,12 +25,16 @@ const Contact = () => {
     setError('');
 
     try {
-      await contactService.sendMessage(formData);
+      const response = await contactService.sendMessage(formData);
       setSubmitted(true);
       setFormData({ name: '', email: '', phone: '', message: '' });
       setTimeout(() => setSubmitted(false), 5000);
     } catch (err) {
-      setError(err.response?.data?.message || 'Error sending message. Please try again.');
+      console.error('Contact form error:', err);
+      const errorMessage = err.response?.data?.message || 
+                          err.message || 
+                          'Error sending message. Please try again.';
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }
