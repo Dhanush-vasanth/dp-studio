@@ -36,121 +36,121 @@ const Portfolio = () => {
         _id: '1',
         title: 'Beautiful Wedding Ceremony',
         category: 'Wedding',
-        imageUrl: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '2',
         title: 'Couple Portrait',
         category: 'Wedding',
-        imageUrl: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '3',
         title: 'Elegant Wedding Reception',
         category: 'Wedding',
-        imageUrl: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '4',
         title: 'Wedding Vows Exchange',
         category: 'Wedding',
-        imageUrl: 'https://images.unsplash.com/photo-1531788752726-b67f8ffad3a6?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1531788752726-b67f8ffad3a6?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '5',
         title: 'Event Celebration',
         category: 'Events',
-        imageUrl: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '6',
         title: 'Grand Party Event',
         category: 'Events',
-        imageUrl: 'https://images.unsplash.com/photo-1519671482677-e0e99c9fdd63?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1519671482677-e0e99c9fdd63?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '7',
         title: 'Corporate Event',
         category: 'Events',
-        imageUrl: 'https://images.unsplash.com/photo-1540575467063-178f50002cbc?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1540575467063-178f50002cbc?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '8',
         title: 'Birthday Celebration',
         category: 'Events',
-        imageUrl: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '9',
         title: 'Baby Portrait',
         category: 'Baby',
-        imageUrl: 'https://images.unsplash.com/photo-1493657671411-b21b27c24c74?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1493657671411-b21b27c24c74?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '10',
         title: 'Newborn Photography',
         category: 'Baby',
-        imageUrl: 'https://images.unsplash.com/photo-1522898322262-3d45b8bd2a6e?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1522898322262-3d45b8bd2a6e?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '11',
         title: 'Cute Baby Moments',
         category: 'Baby',
-        imageUrl: 'https://images.unsplash.com/photo-1503454537706-e88874d11e9d?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1503454537706-e88874d11e9d?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '12',
         title: 'Family with Baby',
         category: 'Baby',
-        imageUrl: 'https://images.unsplash.com/photo-1511104277397-bdc0205e3f4d?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1511104277397-bdc0205e3f4d?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '13',
         title: 'Outdoor Photoshoot',
         category: 'Outdoor',
-        imageUrl: 'https://images.unsplash.com/photo-1516035069371-29c4764c5ce0?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1516035069371-29c4764c5ce0?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '14',
         title: 'Mountain Adventure Photography',
         category: 'Outdoor',
-        imageUrl: 'https://images.unsplash.com/photo-1495252585518-9e892cf1d4d7?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1495252585518-9e892cf1d4d7?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '15',
         title: 'Beach Portrait Session',
         category: 'Outdoor',
-        imageUrl: 'https://images.unsplash.com/photo-1510316996212-50e0b5af6c5e?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1510316996212-50e0b5af6c5e?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '16',
         title: 'Nature Engagement',
         category: 'Outdoor',
-        imageUrl: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '17',
         title: 'Pre-Wedding Shoot',
         category: 'PreWedding',
-        imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '18',
         title: 'Romantic Pre-Wedding',
         category: 'PreWedding',
-        imageUrl: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '19',
         title: 'Prewedding at Sunset',
         category: 'PreWedding',
-        imageUrl: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       },
       {
         _id: '20',
         title: 'Intimate Couple Moment',
         category: 'PreWedding',
-        imageUrl: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500&h=400&fit=crop'
+        imageUrl: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&q=80&w=500&h=400&fit=crop'
       }
     ];
   };
