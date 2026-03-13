@@ -13,7 +13,7 @@ const Admin = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [selectedMessage, setSelectedMessage] = useState(null);
-  const [newService, setNewService] = useState({ title: '', description: '', price: '' });
+  const [newService, setNewService] = useState({ title: '', description: '', image: '' });
   const [newImage, setNewImage] = useState({ title: '', category: '', imageUrl: '' });
   const [imageFile, setImageFile] = useState(null);
   const [uploadLoading, setUploadLoading] = useState(false);
@@ -49,14 +49,14 @@ const Admin = () => {
 
   const handleAddService = async (e) => {
     e.preventDefault();
-    if (!newService.title || !newService.description || !newService.price) {
+    if (!newService.title || !newService.description || !newService.image) {
       alert('Please fill all fields');
       return;
     }
 
     try {
       await serviceService.createService(newService);
-      setNewService({ title: '', description: '', price: '' });
+      setNewService({ title: '', description: '', image: '' });
       fetchData();
       alert('Service added successfully!');
     } catch (err) {
@@ -281,19 +281,19 @@ const Admin = () => {
 
                   <div>
                     <label className="block text-gray-700 font-bold mb-2">
-                      Price
+                      Image URL
                     </label>
                     <input
-                      type="number"
-                      value={newService.price}
+                      type="url"
+                      value={newService.image}
                       onChange={(e) =>
                         setNewService({
                           ...newService,
-                          price: e.target.value
+                          image: e.target.value
                         })
                       }
                       className="form-input w-full"
-                      placeholder="0.00"
+                      placeholder="https://images.unsplash.com/..."
                     />
                   </div>
 
@@ -322,9 +322,13 @@ const Admin = () => {
                         <div>
                           <h3 className="text-lg font-bold">{service.title}</h3>
                           <p className="text-gray-600 mt-2">{service.description}</p>
-                          <p className="text-yellow-600 font-bold text-lg mt-3">
-                            ${service.price}
-                          </p>
+                          {service.image && (
+                            <img 
+                              src={service.image} 
+                              alt={service.title}
+                              className="mt-3 w-full h-32 object-cover rounded"
+                            />
+                          )}
                         </div>
                         <button
                           onClick={() => handleDeleteService(service._id)}
