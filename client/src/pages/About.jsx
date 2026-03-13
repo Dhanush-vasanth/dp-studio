@@ -33,7 +33,7 @@ const About = () => {
           <div className="bg-gray-300 rounded-lg overflow-hidden h-96">
             <img 
               src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&h=600&fit=crop" 
-              alt="Studio"
+              alt="DP Studio professional photography studio interior with lighting equipment and backdrops"
               className="w-full h-full object-cover"
             />
           </div>

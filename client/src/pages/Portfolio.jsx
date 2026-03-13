@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import ImageLightbox from '../components/ImageLightbox';
+import LoadingSpinner, { LoadingSkeleton } from '../components/LoadingSpinner';
 import { portfolioService, getAssetUrl } from '../services/api';
 
 const Portfolio = () => {
@@ -195,7 +196,9 @@ const Portfolio = () => {
 
         {/* Gallery Grid */}
         {loading ? (
-          <div className="text-center">Loading portfolio...</div>
+          <div className="gallery-grid">
+            <LoadingSkeleton count={9} type="card" />
+          </div>
         ) : filteredImages.length > 0 ? (
           <>
             <div className="gallery-grid">

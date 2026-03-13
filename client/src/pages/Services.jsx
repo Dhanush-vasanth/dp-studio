@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import ServiceCard from '../components/ServiceCard';
+import LoadingSpinner, { LoadingSkeleton } from '../components/LoadingSpinner';
 import { serviceService } from '../services/api';
 
 const Services = () => {
@@ -69,7 +70,9 @@ const Services = () => {
       {/* Services */}
       <section className="max-w-7xl mx-auto px-4 py-16">
         {loading ? (
-          <div className="text-center">Loading services...</div>
+          <div className="gallery-grid">
+            <LoadingSkeleton count={5} type="card" />
+          </div>
         ) : (
           <>
             <div className="gallery-grid">

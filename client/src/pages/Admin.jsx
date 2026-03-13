@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import { contactService, serviceService, portfolioService } from '../services/api';
 
 const Admin = () => {
   const navigate = useNavigate();
+  const { isAuthenticated, isAdmin } = useAuth();
   const [activeTab, setActiveTab] = useState('messages');
   const [messages, setMessages] = useState([]);
   const [services, setServices] = useState([]);
@@ -17,16 +19,13 @@ const Admin = () => {
   const [uploadLoading, setUploadLoading] = useState(false);
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    const isAdmin = localStorage.getItem('isAdmin');
-
-    if (!token || isAdmin !== 'true') {
+    if (!isAuthenticated || !isAdmin) {
       navigate('/login');
       return;
     }
 
     fetchData();
-  }, [navigate]);
+  }, [isAuthenticated, isAdmin, navigate]);
 
   const fetchData = async () => {
     setLoading(true);

@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /login
+Disallow: /register
+
+# Crawl delay in seconds
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://dp-studio.onrender.com/sitemap.xml

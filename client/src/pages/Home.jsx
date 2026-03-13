@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../components/ServiceCard';
+import LoadingSpinner, { LoadingSkeleton } from '../components/LoadingSpinner';
 import { serviceService, portfolioService, getAssetUrl } from '../services/api';
 
 const Home = () => {
@@ -76,7 +77,9 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
           {loading ? (
-            <div className="text-center">Loading...</div>
+            <div className="gallery-grid mb-8">
+              <LoadingSkeleton count={3} type="card" />
+            </div>
           ) : (
             <div className="gallery-grid mb-8">
               {services.map((service) => (
@@ -96,7 +99,9 @@ const Home = () => {
       <section className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold text-center mb-12">Portfolio Highlights</h2>
         {loading ? (
-          <div className="text-center">Loading...</div>
+          <div className="gallery-grid mb-8">
+            <LoadingSkeleton count={6} type="card" />
+          </div>
         ) : (
           <>
             <div className="gallery-grid mb-8">

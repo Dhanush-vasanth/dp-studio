@@ -24,6 +24,14 @@ const Contact = () => {
     setLoading(true);
     setError('');
 
+    // Validate phone number (basic pattern: 10-15 digits allowed)
+    const phoneRegex = /^[0-9\s\-\+\(\)]{10,}$/;
+    if (!phoneRegex.test(formData.phone.replace(/\s/g, ''))) {
+      setError('Please enter a valid phone number (at least 10 digits)');
+      setLoading(false);
+      return;
+    }
+
     try {
       const response = await contactService.sendMessage(formData);
       setSubmitted(true);

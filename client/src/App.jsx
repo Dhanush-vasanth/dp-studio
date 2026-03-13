@@ -13,6 +13,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Admin from './pages/Admin';
+import NotFound from './pages/NotFound';
 
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, isAdmin } = useAuth();
@@ -54,6 +55,7 @@ function App() {
                 </ProtectedRoute>
               } 
             />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
